@@ -27,6 +27,11 @@ public class BinarySearchWord {
 			System.out.println("Element found at " + "index " + result);
 	}
 
+	/*
+	 * @Purpose:Binary Search the Word from Word List
+	 * 
+	 * @Param: Array Elements And Element To Search
+	 */
 	static int binarySearch(String[] arrayElements, String search) {
 		int left = 0, right = arrayElements.length - 1;
 		while (left <= right) {
