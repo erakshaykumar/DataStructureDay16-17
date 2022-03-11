@@ -1,3 +1,8 @@
+/*@Purpose : takes a command-line argument N, asks you to think of a number
+ * between 0 and N-1, where N = 2^n, and always guesses the answer with n questions.
+ * @File : Find Your Number
+ * @Author : Akshay Kumar 
+ */
 package com.blz.datastructure;
 
 import java.util.Scanner;
@@ -5,7 +10,14 @@ import java.util.Scanner;
 public class FindYourNumber {
 	static Scanner sc = new Scanner(System.in);
 
-	public static void main(String ar[]) {
+	/*
+	 * @Purpose: Getting The Elements Of Array As Input For Finding Number
+	 * 
+	 * @Param: Elements Of String Array That We Enter
+	 * 
+	 * @Return: True Or False
+	 */
+	public static void main(String args[]) {
 
 		System.out.println("Enter The number greater than your number ");
 		int len = sc.nextInt();
@@ -21,6 +33,13 @@ public class FindYourNumber {
 
 	}
 
+	/*
+	 * @Purpose: Getting Of Repeat Elements Of Array As Input For Finding Number
+	 * 
+	 * @Param: Elements Of Int Array arr, start and end
+	 * 
+	 * @Return: Value Or Again The Cases
+	 */
 	public static int repeat(int arr[], int start, int end) {
 
 		for (int i = 0; i < end; i++) {
